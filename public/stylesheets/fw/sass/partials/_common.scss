@@ -1,0 +1,143 @@
+@import "compass/css3/box-sizing";
+@import "mixins";
+
+$fw-font-family: tahoma, arial, "Hiragino Sans GB", \5FAE\8F6F\96C5\9ED1, sans-serif;
+
+$fw-hr-color: rgba(0, 0, 0, 0.3);
+$fw-hr-space: 8px;
+$fw-bg: #f3f9f3 !default;
+
+*, *:before, *:after {
+  @include box-sizing(border-box);
+}
+
+body, html {
+  background-color: $fw-bg;
+  font-size: 100%;
+  font-family: $fw-font-family;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+hr {
+  color: $fw-hr-color;
+  margin: $fw-hr-space 0;
+
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.native-scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+.fw-block {
+  display: block !important;
+}
+
+.fw-clearfix:before, .fw-clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.fw-clearfix:after {
+  clear: both;
+}
+
+.fw-center {
+  text-align: center !important;
+}
+
+.fw-center-v {
+  position: absolute;
+  top: 50%;
+  -o-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.fw-left {
+  text-align: left !important;
+}
+
+.fw-right {
+  text-align: right !important;
+}
+
+.fw-nomargin {
+  margin: 0 !important;
+}
+
+.fw-blue {
+  color: #478fca;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+}
+
+.fw-nopadding {
+  padding: 0 !important;
+}
+
+strong {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.fw-hidden {
+  display: none;
+}
+
+.fw-nowrap {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 480px) {
+
+  html {
+    font-size: 75%;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  html {
+    font-size: 62.5%;
+  }
+}
+
+.fw-frame {
+  @include box-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  padding: 15px;
+  -webkit-appearance: none;
+}
+
+.fw-relative {
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+}

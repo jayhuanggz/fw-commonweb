@@ -1,0 +1,66 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin css-transition($val) {
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -ms-transition: $val;
+  transition: $val;
+}
+
+@mixin animation($val) {
+  -webkit-animation: $val;
+  -moz-animation: $val;
+  animation: $val;
+
+}
+
+@mixin fullPanel() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -o-transform: $val;
+  -ms-transform: $val;
+  transform: $val;
+
+}
+
+@mixin box-shadow($val) {
+  -webkit-box-shadow: $val;
+  -moz-box-shadow: $val;
+  -ms-box-shadow: $val;
+  box-shadow: $val;
+
+}
+
+@mixin flex($val) {
+  -webkit-box-flex: $val;
+  -moz-box-flex: $val auto;
+  -webkit-flex: $val auto;
+  -ms-flex: $val auto;
+  flex: $val auto;
+}
+
+@mixin smooth3d() {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+

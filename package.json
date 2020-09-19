@@ -1,0 +1,70 @@
+{
+  "_args": [
+    [
+      "fw-commonweb@1.1.24"
+    ]
+  ],
+  "_from": "fw-commonweb@1.1.24",
+  "_id": "fw-commonweb@1.1.24",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/fw-commonweb",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/fw-commonweb-1.1.24.tgz_1483064783924_0.36363696213811636"
+  },
+  "_npmUser": {
+    "email": "wdy0504@126.com",
+    "name": "wdy0504"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "fw-commonweb",
+    "raw": "fw-commonweb@1.1.24",
+    "rawSpec": "1.1.24",
+    "scope": null,
+    "spec": "1.1.24",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/fw-commonweb/-/fw-commonweb-1.1.24.tgz",
+  "_shasum": "c72350b9e806c37a321908db4cd26fc8fd8905d6",
+  "_shrinkwrap": null,
+  "_spec": "fw-commonweb@1.1.24",
+  "_where": "/mnt/daily-web",
+  "dependencies": {
+    "art-template": "^3.0.3",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "debug": "^2.2.0",
+    "express": "^4.13.4",
+    "fw-combo": "*",
+    "jsonwebtoken": "^6.1.1",
+    "log4js": "^0.6.35",
+    "passport": "^0.3.2",
+    "request": "^2.72.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "c72350b9e806c37a321908db4cd26fc8fd8905d6",
+    "tarball": "https://registry.npmjs.org/fw-commonweb/-/fw-commonweb-1.1.24.tgz"
+  },
+  "gitHead": "31c2a8a66907b6dc2449b5aeafa925903c9c11a3",
+  "maintainers": [
+    {
+      "email": "wdy0504@126.com",
+      "name": "wdy0504"
+    }
+  ],
+  "name": "fw-commonweb",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {},
+  "version": "1.1.24"
+}

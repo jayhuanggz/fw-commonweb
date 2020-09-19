@@ -1,0 +1,149 @@
+$button-padding: 5px 15px !default;
+$button-default-bg: #ffffff !default;
+$button-default-color: #555555 !default;
+$button-default-border: #ffffff !default;
+
+$button-green: #1abc9c !default;
+$button-green-border: #1abc9c !default;
+
+$button-orange: #f39c12 !default;
+$button-orange-border: #f39c12 !default;
+
+$button-red: #d9534f !default;
+$button-red-border: #d43f3a !default;
+
+button, .button {
+  font-family: inherit;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: $button-padding;
+  margin: 0.7rem 0;
+  color: $button-default-color;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: $button-default-bg;
+  border: 1px solid $button-default-border;
+  border-radius: .5rem;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.button.default:hover, .button.default:active, .button.default:focus {
+
+  color: $button-default-color;
+  background-color: $button-default-bg;
+}
+
+.button.gray {
+  background: #999;
+  border-color: #666;
+}
+
+.button.yellow {
+  background-color: #F1C222;
+  border-color: #999;
+}
+
+.button.red {
+  color: #fff;
+  background: $button-red;
+  border-color: $button-red-border;
+}
+
+.button.green {
+  color: #fff;
+  background: $button-green;
+  border-color: $button-green-border;
+}
+
+.button.orange {
+  color: #fff;
+  background-color: $button-orange;
+  border-color: $button-orange-border;
+}
+
+.button.white {
+  color: #333333;
+  background-color: #ffffff;
+
+}
+
+.button.md {
+  padding: 10px 20px;
+}
+
+.button.long {
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+
+}
+
+.button.lg {
+
+  padding: 15px 30px;
+  font-size: 120%;
+}
+
+.button.wide {
+
+  min-width: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button.fw-block {
+  width: 100%;
+}
+
+.button-grouped > .button {
+  background-color: #e0e0e0;
+
+  color: inherit;
+  @include css-transition(all 0.25s);
+}
+
+.button-grouped > .button.active {
+  background-color: #2e6da4;
+
+  border-color: #286090;
+
+  color: #fff;
+}
+
+.button.grey {
+  background-color: #bcbcbc;
+  border-color: #dddddd;
+  color: #ffffff;
+}
+
+.button.round {
+  @include border-radius(2em);
+}
+
+.button.nobg {
+  color: inherit;
+  background: none transparent;
+}
+
+.button.nobg.orange {
+  border-color: $button-orange;
+  color: $button-orange;
+
+  background: none transparent;
+  @include box-shadow(none);
+}
+
+.button.nobg.green {
+  color: $button-green;
+  border-color: $button-green;
+}
+
+.button.nobg.white {
+  color: #ffffff;
+  border-color: #ffffff;
+
+}

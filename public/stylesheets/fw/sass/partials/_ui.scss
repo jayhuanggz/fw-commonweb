@@ -1,0 +1,151 @@
+$header-bg: none transparent !default;
+$header-color: inherit !default;
+$footer-bg: none transparent !default;
+$footer-color: inherit !default;
+
+$popup-bg: #f3faf3 !default;
+$popup-radius: 6px !default;
+
+#fwui {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  footer {
+    z-index: 180;
+    background: $footer-bg;
+    display: block;
+    position: relative;
+    padding: 0;
+    color: $footer-color;
+    display: none;
+  }
+
+  header {
+    background: $header-bg;
+    color: $header-color;
+    display: none;
+  }
+
+  #content {
+    z-index: 180;
+
+    position: relative;
+
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+
+    background: inherit;
+    color: inherit;
+
+  }
+
+  .view {
+    height: 100%;
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+  }
+
+  .view.current {
+    z-index: 300;
+  }
+
+  .view.prepareSlide {
+    @include transform(translate3d(100%, 0, 0));
+  }
+
+  .view.transitioning {
+    @include css-transition(all .3s ease);
+
+  }
+
+  .view.slideOut {
+
+    @include transform(translate3d(-100%, 0, 0));
+
+  }
+
+  .view.padding {
+    padding: 10px;
+  }
+
+  .label {
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    padding: 0;
+    line-height: inherit;
+    font-family: inherit;
+
+  }
+
+  .list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+  }
+
+  .fullbg {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+
+}
+
+.popup {
+
+  background: none transparent;
+  z-index: 310;
+  min-height: 0;
+  text-align: center;
+  @include box-shadow(none);
+  border: none;
+  padding: 0;
+
+}
+
+.popup > .popup-content {
+
+  background: $popup-bg;
+  @include border-radius($popup-radius);
+  padding: 20px;
+  display: inline-block;
+  text-align: left;
+
+}

@@ -1,0 +1,373 @@
+/* line 6, sass/transition.scss */
+.page {
+  -webkit-transform: translate3D(0%, 0, 0);
+  -moz-transform: translate3D(0%, 0, 0);
+  -o-transform: translate3D(0%, 0, 0);
+  -ms-transform: translate3D(0%, 0, 0);
+  transform: translate3D(0%, 0, 0);
+}
+/* line 9, sass/transition.scss */
+.page.page-on-left {
+  opacity: 0.9;
+  -webkit-transform: translate3D(-20%, 0, 0);
+  -moz-transform: translate3D(-20%, 0, 0);
+  -o-transform: translate3D(-20%, 0, 0);
+  -ms-transform: translate3D(-20%, 0, 0);
+  transform: translate3D(-20%, 0, 0);
+}
+/* line 15, sass/transition.scss */
+.page.page-on-center {
+  -webkit-transform: translate3D(0, 0, 0);
+  -moz-transform: translate3D(0, 0, 0);
+  -o-transform: translate3D(0, 0, 0);
+  -ms-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
+}
+/* line 20, sass/transition.scss */
+.page.page-on-right {
+  -webkit-transform: translate3D(100%, 0, 0);
+  -moz-transform: translate3D(100%, 0, 0);
+  -o-transform: translate3D(100%, 0, 0);
+  -ms-transform: translate3D(100%, 0, 0);
+  transform: translate3D(100%, 0, 0);
+}
+/* line 25, sass/transition.scss */
+.page.page-on-bottom {
+  -webkit-transform: translate3D(0, 100%, 0);
+  -moz-transform: translate3D(0, 100%, 0);
+  -o-transform: translate3D(0, 100%, 0);
+  -ms-transform: translate3D(0, 100%, 0);
+  transform: translate3D(0, 100%, 0);
+}
+/* line 30, sass/transition.scss */
+.page.center-to-left {
+  -moz-animation: centerToLeft 0.4s forwards;
+  -webkit-animation: centerToLeft 0.4s forwards;
+  animation: centerToLeft 0.4s forwards;
+}
+/* line 36, sass/transition.scss */
+.page.left-to-center {
+  -moz-animation: leftToCenter 0.4s forwards;
+  -webkit-animation: leftToCenter 0.4s forwards;
+  animation: leftToCenter 0.4s forwards;
+}
+/* line 41, sass/transition.scss */
+.page.center-to-right {
+  -moz-animation: centerToRight 0.4s forwards;
+  -webkit-animation: centerToRight 0.4s forwards;
+  animation: centerToRight 0.4s forwards;
+}
+/* line 47, sass/transition.scss */
+.page.right-to-center {
+  -moz-animation: rightToCenter 0.4s forwards;
+  -webkit-animation: rightToCenter 0.4s forwards;
+  animation: rightToCenter 0.4s forwards;
+}
+/* line 53, sass/transition.scss */
+.page.bottom-to-center {
+  -moz-animation: bottomToCenter 0.4s forwards;
+  -webkit-animation: bottomToCenter 0.4s forwards;
+  animation: bottomToCenter 0.4s forwards;
+}
+/* line 59, sass/transition.scss */
+.page.center-to-bottom {
+  -moz-animation: centerToBottom 0.4s forwards;
+  -webkit-animation: centerToBottom 0.4s forwards;
+  animation: centerToBottom 0.4s forwards;
+}
+
+@keyframes rightToCenter {
+  /* line 70, sass/transition.scss */
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  /* line 75, sass/transition.scss */
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes rightToCenter {
+  /* line 83, sass/transition.scss */
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+  }
+
+  /* line 88, sass/transition.scss */
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@-moz-keyframes rightToCenter {
+  /* line 96, sass/transition.scss */
+  0% {
+    -moz-transform: translate3d(100%, 0, 0);
+  }
+
+  /* line 101, sass/transition.scss */
+  100% {
+    -moz-transform: translate3d(0, 0, 0);
+  }
+}
+
+@-o-keyframes rightToCenter {
+  /* line 108, sass/transition.scss */
+  0% {
+    -o-transform: translate3d(100%, 0, 0);
+  }
+
+  /* line 113, sass/transition.scss */
+  100% {
+    -o-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes centerToLeft {
+  /* line 122, sass/transition.scss */
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* line 126, sass/transition.scss */
+  100% {
+    transform: translate3d(-20%, 0, 0);
+  }
+}
+
+@-webkit-keyframes centerToLeft {
+  /* line 134, sass/transition.scss */
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 138, sass/transition.scss */
+  100% {
+    -webkit-transform: translate3d(-20%, 0, 0);
+  }
+}
+
+@-moz-keyframes centerToLeft {
+  /* line 145, sass/transition.scss */
+  0% {
+    -moz-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 149, sass/transition.scss */
+  100% {
+    -moz-transform: translate3d(-20%, 0, 0);
+  }
+}
+
+@-o-keyframes centerToLeft {
+  /* line 156, sass/transition.scss */
+  0% {
+    -o-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 160, sass/transition.scss */
+  100% {
+    -o-transform: translate3d(-20%, 0, 0);
+  }
+}
+
+@keyframes centerToRight {
+  /* line 169, sass/transition.scss */
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* line 173, sass/transition.scss */
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@-webkit-keyframes centerToRight {
+  /* line 181, sass/transition.scss */
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 185, sass/transition.scss */
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0);
+  }
+}
+
+@-moz-keyframes centerToRight {
+  /* line 192, sass/transition.scss */
+  0% {
+    -moz-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 196, sass/transition.scss */
+  100% {
+    -moz-transform: translate3d(100%, 0, 0);
+  }
+}
+
+@-o-keyframes centerToRight {
+  /* line 203, sass/transition.scss */
+  0% {
+    -o-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 207, sass/transition.scss */
+  100% {
+    -o-transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes leftToCenter {
+  /* line 216, sass/transition.scss */
+  0% {
+    opacity: 0.9;
+    transform: translate3d(-20%, 0, 0);
+  }
+
+  /* line 221, sass/transition.scss */
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes leftToCenter {
+  /* line 230, sass/transition.scss */
+  0% {
+    opacity: 0.9;
+    -webkit-transform: translate3d(-20%, 0, 0);
+  }
+
+  /* line 235, sass/transition.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@-moz-keyframes leftToCenter {
+  /* line 244, sass/transition.scss */
+  0% {
+    opacity: 0.9;
+    -moz-transform: translate3d(-20%, 0, 0);
+  }
+
+  /* line 249, sass/transition.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+  }
+}
+
+@-o-keyframes leftToCenter {
+  /* line 259, sass/transition.scss */
+  0% {
+    opacity: 0.9;
+    -o-transform: translate3d(-20%, 0, 0);
+  }
+
+  /* line 264, sass/transition.scss */
+  100% {
+    opacity: 1;
+    -o-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bottomToCenter {
+  /* line 274, sass/transition.scss */
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  /* line 279, sass/transition.scss */
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-moz-keyframes bottomToCenter {
+  /* line 287, sass/transition.scss */
+  0% {
+    -moz-transform: translate3d(0, 100%, 0);
+  }
+
+  /* line 292, sass/transition.scss */
+  100% {
+    -moz-transform: translate3d(0, 0, 0);
+  }
+}
+
+@-o-keyframes bottomToCenter {
+  /* line 299, sass/transition.scss */
+  0% {
+    -o-transform: translate3d(0, 100%, 0);
+  }
+
+  /* line 304, sass/transition.scss */
+  100% {
+    -o-transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes bottomToCenter {
+  /* line 311, sass/transition.scss */
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+
+  /* line 316, sass/transition.scss */
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes centerToBottom {
+  /* line 325, sass/transition.scss */
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* line 330, sass/transition.scss */
+  100% {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@-webkit-keyframes centerToBottom {
+  /* line 337, sass/transition.scss */
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 342, sass/transition.scss */
+  100% {
+    -webkit-transform: translate3d(0, 100%, 0);
+  }
+}
+
+@-moz-keyframes centerToBottom {
+  /* line 348, sass/transition.scss */
+  0% {
+    -moz-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 353, sass/transition.scss */
+  100% {
+    -moz-transform: translate3d(0, 100%, 0);
+  }
+}
+
+@-o-keyframes centerToBottom {
+  /* line 359, sass/transition.scss */
+  0% {
+    -o-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 364, sass/transition.scss */
+  100% {
+    -o-transform: translate3d(0, 100%, 0);
+  }
+}
